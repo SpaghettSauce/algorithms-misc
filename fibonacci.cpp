@@ -14,11 +14,11 @@ int main(){
 
 //Matrix 
  int arr[2][2] = {0,1,1,1};
- int def[2][2] = {0,0,0,1};
+ int def[2][2] = {0,0,0,0};
  for (int q=0; q<n; q++){
     for (int i=0; i<2; i++){           
         for (int j=0; j<2; j++){                                         
-            def[i][j] += arr[i][j] + 1;
+            def[i][j] += arr[i][j] * arr[j][i];
         }
     }
 }
@@ -33,5 +33,8 @@ for (int i=0;i<2;i++){
 
 
 //Подсчетом
+
+
+
     return 0;
 }
