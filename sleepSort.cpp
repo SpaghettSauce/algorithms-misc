@@ -6,7 +6,7 @@
 void routine(void *a)
 {
 	int n = *(int *) a;  //приписываем n значение int a
-	Sleep(n * 10); //спим 10 мс
+	Sleep(n * 100); //спим 10 мс
 	printf("%d ", n);
 }
 
